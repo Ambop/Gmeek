@@ -33,7 +33,7 @@
 <h1>
     <img src="{{ blogBase['avatarUrl'] }}" class="avatar circle" id="avatarImg">
     {%- if blogBase['displayTitle']=='eekdai' -%}
-    <a class="blogTitle" href="https://meekdai.com">{{ blogBase['displayTitle'] }}</a>
+    <a class="blogTitle" href="https://ambop.github.io/blog">{{ blogBase['displayTitle'] }}</a>
     {% else -%}
     <a class="blogTitle">{{ blogBase['displayTitle'] }}</a>
     {%- endif -%}
@@ -76,7 +76,7 @@
     </div>
     <div class="listLabels">
         {% if postListJson[num]['commentNum']>0 %}<span class="Label" style="background-color:{{ blogBase['commentLabelColor'] }}">{{ postListJson[num]['commentNum'] }}</span>{% endif %}
-        <span class="Label LabelName" style="background-color:{{ postListJson[num]['labelColor'] }}"><object><a style="color:#fff" href="/tag.html#{{ postListJson[num]['label'] }}">{{ postListJson[num]['label'] }}</a></object></span>
+        <span class="Label LabelName" style="background-color:{{ postListJson[num]['labelColor'] }}"><object><a style="color:#fff" href="/blog/tag.html#{{ postListJson[num]['label'] }}">{{ postListJson[num]['label'] }}</a></object></span>
         <span class="Label LabelTime" style="background-color:{{ postListJson[num]['dateLabelColor'] }}">{{ postListJson[num]['createdDate'] }}</span>
     </div>
 </a>
